@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface CategoryDao {
     List<Category> list() throws SQLException;
-    public int insertCategory(String name);
-    public int updateCategory(int id,String name);
+    int insertCategory(String name);
+    int updateCategory(int id,String name);
+    int deleteCategory(int id);
 }

@@ -38,5 +38,8 @@ public class CategoryImp implements CategoryDao{
         return 0;
     }
 
-
+    @Override
+    public int deleteCategory(int id) {
+        return 0;
+    }
 }

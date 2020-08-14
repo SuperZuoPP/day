@@ -15,4 +15,7 @@ public interface CategoryServices extends CategoryDao{
 
     @Override
     int updateCategory(int id,String name);
+
+    @Override
+    int deleteCategory(int id);
 }
