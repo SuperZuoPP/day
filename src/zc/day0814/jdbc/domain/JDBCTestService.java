@@ -10,11 +10,11 @@ public class JDBCTestService {
     public static void main(String[] args) {
         CategoryServicesImpl csi = new CategoryServicesImpl();
         try {
-            csi.insertCategory("电器");
-            csi.updateCategory(3,"饮料");
-            csi.deleteCategory(11);
-            List<Category> list = csi.list();
-            System.out.println(list.toString());
+              csi.insertCategory("家具");
+              csi.updateCategory(1,"水果");
+              csi.deleteCategory(14);
+              List<Category> list = csi.list();
+              System.out.println(list.toString());
         } catch (SQLException e) {
             e.printStackTrace();
         }
