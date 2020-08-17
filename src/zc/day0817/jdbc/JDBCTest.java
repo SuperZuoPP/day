@@ -1,4 +1,4 @@
-package day0817;
+package day0817.jdbc;
 
 import day0814.jdbc.util.JDBCUtil;
 
@@ -17,7 +17,7 @@ public class JDBCTest {
 
     public static void main(String[] args) {
 
-        new JDBCTest().query(3,"饮料");
+        new JDBCTest().query(3,"category3");
 
     }
 
