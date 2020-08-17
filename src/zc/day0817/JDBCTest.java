@@ -11,6 +11,7 @@ import java.sql.SQLException;
  * PreparedStatement和Statement
  * 1.PreparedStatement是预编译（实例包含已编译的SQL语句）的,对于批量处理可以大大提高效率. 也叫JDBC存储过程
  * 2.除了缓冲的问题之外，使用PreparedStatement对象,那就是安全性（预防SQL注入攻击）
+ * 3.
  */
 public class JDBCTest {
 
