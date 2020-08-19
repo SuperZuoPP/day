@@ -29,13 +29,13 @@ public class JDBCTemplateDemo {
     public void testInsert(){
         String strsql = "insert into category(name) values(?)";
         int jdbcTemplate1 = jdbcTemplate.update(strsql, "JDBCTemplate1");
-        System.out.println(jdbcTemplate1);
+        testQuery1();
     }
 
     @Test
     public void testDel(){
         String strsql = "delete from category where id = ?";
-        int jdbcTemplate1 = jdbcTemplate.update(strsql, "22");
+        int jdbcTemplate1 = jdbcTemplate.update(strsql, "20");
         testQuery1();
     }
 
@@ -93,6 +93,7 @@ public class JDBCTemplateDemo {
         for (Category category : categoryList) {
             System.out.println(category);
         }
+        System.out.println(categoryList);
     }
 
 }
